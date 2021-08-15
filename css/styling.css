@@ -1,0 +1,169 @@
+/* Jason Lazera - Scrabble game styling
+    jason_lazera@student.uml.edu */
+
+/* styling the scrabble tiles */ 
+.game_tile {
+    margin-right: 20px;
+    width:128px;
+    height:128px;
+}
+
+/* styling the body */
+body {
+    background-color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+}
+
+/* styling the main header */
+h1 {
+    font-family: monospace;
+}
+
+/* Styling for the Board */
+.boardTile {
+    width:128px;
+    height:128px;
+}
+
+/* styling for the rack */
+#rack {
+    margin-left: 0px;
+    width:1140px;
+    height:240px;
+    border-radius: 0px;
+}
+
+/* stling for rack container */
+#rack_div {
+    position: relative;
+}
+
+/* More rack styling */
+#game_rack {
+    position: absolute;
+    bottom: 45px;
+    left: 75px;
+    margin-top: 0px;
+}
+
+/* styling for images */
+img {
+    margin-left:5px;
+    margin-right:5px;
+    border-radius: 25px;
+}
+
+/* Styling for board container */
+#board_div {
+    padding: 20px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: rgb(212, 86, 86);
+    width: 1139px;
+    border-radius: 0px;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+
+#remainingTiles {
+    border-radius: 10px;
+    border-style: double;
+}
+
+/* Styling for table rows and columns */
+table#remainingTiles td, table#remainingTiles tr  {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+    border-spacing: 20px;
+    background-color: rgb(223, 198, 198);
+}
+
+/* styling for the table itself */
+table {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    font-family: monospace;
+}
+
+/* styling for table title */
+#tabletitle {
+    color: rgb(0, 0, 0);
+    background-color: rgb(223, 198, 198);
+    font-family: monospace;
+
+}
+
+/* styling for the table container */
+#container {
+    border-radius: 25px;
+    background-color: rgb(212, 86, 86);
+    width: 50px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding: 0px;
+}
+
+/* Styling for the jumbotron */
+#jumbo {
+    background-color: rgb(212, 86, 86);
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+/* styling for container containing the buttons and score */
+.realContainer {
+    margin-left: 14px;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 1140px;
+    background-color: rgb(212, 86, 86);
+    border-radius: 0px;
+    padding: 0px;
+    font-family: monospace;
+    text-align: center;
+}
+
+/* styling for the add tile button */
+#new_tile {
+    border-radius: 5px;
+    background-color: rgb(223, 198, 198);
+    font-family: monospace;
+}
+
+/* styling for the reset game button */
+#reset {
+    border-radius: 5px;
+    background-color: rgb(223, 198, 198);
+    font-family: monospace;
+}
+
+#tip1 {
+    font-family: monospace;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#tip2 {
+    font-family: monospace;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+#message1 {
+    font-family: monospace;
+    margin-bottom: 30px;
+}
