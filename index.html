@@ -1,0 +1,74 @@
+﻿<!-- Jason Lazera
+    The purpose of this assignment was to design a scrabble game that can be played
+    by one user with one row of the board. The game keeps track of the score, lets
+    the player drag and drop tiles, and will reset if the user wishes to do so.
+    jason_lazera@student.uml.edu, worked on most of the code with Vijaya Anisetti
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Scrabble!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- importing bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- linking JavaScript resorces -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/additional-methods.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/cupertino/jquery-ui.css">
+
+    <!-- linking css and javascript -->
+    <script src="js/scrabble.js"></script>
+    <link href="css/styling.css" rel="stylesheet">
+</head>
+
+<div class="container">
+
+    <!--Using jumbotron to display game name and directions -->
+    <div class="container" id = "container2">
+        <div class="jumbotron text-center" id = "jumbo"> 
+            <h1><em>Scrabble!</em></h1>
+            <p id="message1">Click and drag a tile to the board to start the game!</p>
+            <p id = "tip1">-using the reset button will restart game and score</p>
+            <p id = "tip2">-using the new tile button will generate new tiles</p>
+        </div>
+    </div>
+
+    <!-- New tile button, reset button, and score are kept in this div -->
+    <div class = "realContainer">
+        <button onclick="rack_build()" id="new_tile">New Tiles</button>
+        <button onclick="reset(), rack_build()" id="reset">Reset</button>
+        <h3>Score:<span id="score_board">0</span></h3>
+    </div>
+
+    <!--contains gameboard and tiles that will be dragged and dropped by the player. -->
+    <div class="container" id="board_div">
+        <table>
+            <tr>
+                <td><img id="1" class="boardTile" title="doubleLetter" src="img/Scrabble_Board_Double_Letter.JPG"></td>
+                <td><img id="2" class="boardTile" title="blank" src="img/Scrabble_Board_Blank.JPG"></td>
+                <td><img id="3" class="boardTile" title="blank" src="img/Scrabble_Board_Blank.JPG"></td>
+                <td><img id="4" class="boardTile" title="tripleLetter" src="img/Scrabble_Board_Triple_Letter.JPG"></td>
+                <td><img id="5" class="boardTile" title="blank" src="img/Scrabble_Board_Blank.JPG"></td>
+                <td><img id="6" class="boardTile" title="blank" src="img/Scrabble_Board_Blank.JPG"></td>
+                <td><img id="7" class="boardTile" title="blank" src="img/Scrabble_Board_Double_Letter.JPG"></td>
+                <td><img id="8" class="boardTile" title="blank" src="img/Scrabble_Board_Blank.JPG"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Tiles are placed on the rack -->
+    <div class="container" id="rack_div">
+        <img id="rack" src="img/scrabbleTileRack2.jpg">
+        <div id="game_rack"></div>
+    </div>
+</div>
+
+</html>
